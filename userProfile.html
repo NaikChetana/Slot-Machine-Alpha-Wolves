@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <style>
+        td{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <head>Welcome to your profile</head>
+    <section>
+        <table>
+            <tr>
+                <td><label for="Pic">Thats me! </label></td>
+                <td id="user_image"><p><img src="" alt="User Image"></p></td>
+            </tr>
+            <tr>
+                <td><label for="UserName">User-Name : </label></td>
+                <td id="user_name"><p>MyName</p></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email : </label></td>
+                <td id="user_email"><p>MyEmail</p></td>
+            </tr>
+            <tr>
+                <td><label for="DOB">Date of birth : </label></td>
+                <td id="DOB"><p>MyDOB</p></td>
+            </tr>
+            <tr>
+                <td><label for="HighScore">HighScore : </label></td>
+                <td id="HighScore"><p>MyHighScore</p></td>
+            </tr>
+            <tr>
+                <td><label for="tokens">Current Tokens : </label></td>
+                <td id="tokens"><p>current n Tokens</p></td>
+            </tr>
+            <tr>
+                <td><label for="attempts">Last 10 rounds : </label></td>
+                <td id="attempts"><p>My Last 10 Rounds <br> <ul><li>1</li> <br> <li>2</li><br><li>...</li></ul></p></td>
+            </tr>            
+
+        </table>
+    </section>
+   
+    <div>
+        <button id="Edit_Profile">Edit</button>
+    </div>
+    
+
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="js/vendor.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+</body>
+</html>
